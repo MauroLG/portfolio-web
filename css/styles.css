@@ -1,0 +1,163 @@
+/*
+==============
+VARIABLES
+==============
+*/
+/* COLORS */
+:root {
+  --black-color: #0b0c10;
+  /*Blue*/
+  --dark-blue-color: #1f2833;
+  /*Gray*/
+  --gray-color: #c5c6c7;
+  /*Lightblue*/
+  --lightblue-color: #66fcf1;
+  /*Ocean*/
+  --ocean-color: #45a29e;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-size: 10px;
+}
+
+::marker {
+  content: none;
+}
+
+html {
+  line-height: 1.15;
+}
+
+body {
+  font-family: 'JetBrains Mono', monospace;
+  color: white;
+  background: var(--black-color);
+  width: 99vw;
+  min-height: 99vh;
+}
+
+header {
+  height: 105px;
+}
+
+nav {
+  top: 0;
+  left: 0;
+  right: 0;
+  position: fixed;
+  background: inherit;
+
+  height: 105px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  backdrop-filter: blur(20px);
+}
+
+nav ul {
+  display: flex;
+  justify-content: space-evenly;
+  width: 50%;
+}
+
+nav a {
+  text-decoration: none;
+  font-size: 2.8rem;
+  color: white;
+  text-transform: uppercase;
+  list-style-type: none;
+  margin: 0 15px 0 15px;
+}
+
+nav a:hover {
+  filter: drop-shadow(0 0 0.75rem var(--gray-color));
+}
+
+nav a.active {
+  color: var(--lightblue-color);
+  filter: drop-shadow(0 0 0.75rem var(--lightblue-color));
+}
+
+h1 {
+  font-size: 5.5rem;
+}
+
+h2 {
+  font-size: 4rem;
+  margin-bottom: 0.7rem;
+}
+
+p {
+  font-size: 2.5rem;
+}
+
+.container {
+  max-width: 70vw;
+  margin: 0 auto;
+  height: 70vh;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  letter-spacing: 1px;
+}
+
+.last {
+  height: 50vh;
+}
+
+.about-title {
+  flex-direction: column;
+}
+
+.object-container {
+  padding-left: 6rem;
+  line-height: 4.2rem;
+  margin: 1rem 0 0.5rem 0;
+}
+
+.span-title {
+  font-size: 2.8rem;
+}
+
+footer {
+  display: flex;
+  justify-content: space-around;
+}
+
+h4 {
+  color: var(--dark-blue-color);
+  font-size: 1.5rem;
+  width: max-content;
+  transition: all 0.5s;
+}
+
+h4:hover {
+  color: rgb(47, 61, 77);
+  transition: color 0.5s;
+}
+
+h4:hover .fa-html5 {
+  color: rgb(255, 94, 0);
+  transition: color 0.5s;
+}
+h4:hover .fa-css3-alt {
+  color: rgba(0, 63, 235, 0.89);
+  transition: color 0.5s;
+}
+h4:hover .fa-js-square {
+  color: #f0db4f;
+  transition: color 0.5s;
+}
+h4:hover .fa-mug-hot {
+  color: rgba(235, 235, 235, 0.918);
+  transition: color 0.5s;
+}
+
+i.fab,
+i.fas {
+  font-size: 2.1rem;
+  transition: 0.1s;
+}

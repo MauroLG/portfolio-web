@@ -44,7 +44,6 @@ $(document).ready(function () {
         .css({
           color: 'var(--gray-color)',
           opacity: '50%',
-          fontSize: '4.5rem',
         });
     }, 500);
     switch (true) {
